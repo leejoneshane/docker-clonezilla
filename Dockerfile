@@ -12,6 +12,8 @@ ENV LANG zh_TW.UTF-8
 ENV LANGUAGE zh_TW.utf-8
 ENV LC_ALL zh_TW.UTF-8
 
+ADD drbl.sh /usr/sbin/drbl.sh
+RUN chmod +x /usr/sbin/drbl.sh
 VOLUME ["/etc/exports", "/tftpboot", "/home/partimag"]
 EXPOSE 68 111 2049
 CMD ["/usr/sbin/drbl.sh"]
