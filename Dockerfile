@@ -13,7 +13,7 @@ RUN apt-get --fix-missing update \
     && wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add - \
     && mkdir -p /run/sendsigs.omit.d
     
-RUN apt-get -y --no-install-recommends install drbl clonezilla mkswap-uuid partclone drbl-chntpw mkpxeinitrd-net ipxe freedos mkinitrd lvm2 genisoimage lshw hwinfo aoetools vblade dmidecode lzma xz xz-utils pxz pixz lzip lbzip2 plzip lrzip pv hfsutils hfsprogs dmsetup dmraid kpartx device-mapper tofrodos dos2unix unix2dos isc-dhcp-server gdisk btrfs-tools ufsutils efibootmgr \
+RUN apt-get -y --no-install-recommends install drbl clonezilla partclone ipxe lvm2 genisoimage lshw hwinfo aoetools vblade dmidecode lzma xz-utils pxz pixz lzip lbzip2 plzip lrzip pv hfsutils hfsprogs dmsetup dmraid kpartx tofrodos dos2unix isc-dhcp-server gdisk btrfs-tools efibootmgr \
     && apt-get clean all
     
 
