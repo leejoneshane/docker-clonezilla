@@ -7,7 +7,7 @@ RUN apt-get update \
     && apt-get -y --no-install-recommends install readline-common net-tools bc gawk binutils apt-utils locales fonts-wqy-zenhei hime wget \
     && echo "zh_TW.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen "zh_TW.UTF-8" \
-    && dpkg-reconfigure locales \
+    && dpkg-reconfigure locales
 
 ENV LANG zh_TW.UTF-8
 ENV LANGUAGE zh_TW.utf-8
