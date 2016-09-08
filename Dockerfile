@@ -2,8 +2,9 @@ FROM debian
 MAINTAINER leejoneshane@gmail.com
 
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install readline-common net-tools bc gawk binutils apt-utils \
-    && apt-get -y --no-install-recommends install locales fonts-wqy-zenhei hime wget \
+    && apt-get -y --no-install-recommends install readline-common net-tools bc gawk binutils apt-utils
+
+RUN apt-get -y --no-install-recommends install locales fonts-wqy-zenhei hime wget \
     && echo "zh_TW.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen "zh_TW.UTF-8" \
     && dpkg-reconfigure locales \
