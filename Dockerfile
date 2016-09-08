@@ -3,7 +3,7 @@ MAINTAINER leejoneshane@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update \
+RUN apt-get --fix-missing update \
     && apt-get -y --no-install-recommends install util-linux tar zip unzip gzip bzip2 lzop pigz pbzip2 procps rsync disktype parted pciutils tcpdump net-tools dialog bc gawk hdparm sdparm netcat file ethtool etherwake ssh syslinux isolinux pxelinux mtools reiserfsprogs psmisc binutils apt-utils locales fonts-wqy-zenhei hime wget txt2html dosfstools initscripts tftpd-hpa nfs-kernel-server nis curl lftp iptables memtest86+ ntfs-3g \
     && echo "zh_TW.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen "zh_TW.UTF-8" \
