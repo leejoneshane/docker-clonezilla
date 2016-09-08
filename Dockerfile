@@ -11,8 +11,7 @@ RUN echo "deb http://free.nchc.org.tw/drbl-core drbl stable" >> /etc/apt/sources
     && wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add - \
     && apt-get install drbl \
     && apt-get clean \
-    && mkdir -p /run/sendsigs.omit.d \
-    && drbl4imp -e -p 40 -b
+    && mkdir -p /run/sendsigs.omit.d
 
 ENV LANG zh_TW.UTF-8
 ENV LANGUAGE zh_TW.utf-8
