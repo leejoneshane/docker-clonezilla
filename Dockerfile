@@ -2,7 +2,8 @@ FROM debian
 MAINTAINER leejoneshane@gmail.com
 
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install libterm-readline* net-tools bc gawk binutils apt-utils locales fonts-wqy-zenhei hime wget \
+    && apt-get -y --no-install-recommends install readline-common net-tools bc gawk binutils apt-utils \
+    && apt-get -y --no-install-recommends install locales fonts-wqy-zenhei hime wget \
     && echo "zh_TW.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen "zh_TW.UTF-8" \
     && dpkg-reconfigure locales \
@@ -10,7 +11,7 @@ RUN apt-get update \
 RUN echo "deb http://free.nchc.org.tw/drbl-core drbl stable" >> /etc/apt/sources.list \
     && wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add - \
     && apt-get install drbl \
-    && apt-get clean \
+    && apt-get clean all \
     && mkdir -p /run/sendsigs.omit.d
 
 ENV LANG zh_TW.UTF-8
