@@ -15,7 +15,7 @@ ENV LC_ALL zh_TW.UTF-8
 
 RUN echo "deb http://free.nchc.org.tw/drbl-core drbl stable" >> /etc/apt/sources.list \
     && wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add - \
-    && apt-get install drbl \
+    && apt-get -y --no-install-recommends install drbl \
     && apt-get clean all \
     && mkdir -p /run/sendsigs.omit.d
 
