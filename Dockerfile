@@ -26,4 +26,4 @@ ENV LC_ALL zh_TW.UTF-8
 
 VOLUME ["/tftpboot", "/home/partimag"]
 EXPOSE 68/udp 111/udp 2049/tcp
-CMD ["/bin/bash"]
+CMD ["drbl4imp -e -b -p 40"]
