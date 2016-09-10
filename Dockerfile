@@ -10,6 +10,7 @@ RUN apt-get --fix-missing update \
     && dpkg-reconfigure locales \
     && echo "deb http://free.nchc.org.tw/debian/ jessie main" >> /etc/apt/sources.list \
     && echo "deb http://free.nchc.org.tw/drbl-core drbl stable" >> /etc/apt/sources.list \
+    && echo "deb http://free.nchc.org.tw/drbl-core drbl unstable" >> /etc/apt/sources.list \
     && wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add - \
     && mkdir -p /run/sendsigs.omit.d
     
