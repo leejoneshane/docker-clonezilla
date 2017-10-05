@@ -24,7 +24,7 @@ RUN apt-get --fix-missing update \
     && wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add - \
     && mkdir -p /run/sendsigs.omit.d
     
-RUN apt-get -y install drbl drbl-chntpw clonezilla partclone ipxe lzop pigz pbzip2 ntfsprogs udpcast mkpxeinitrd-net \
+RUN apt-get -y install drbl clonezilla partclone ipxe lzop pigz pbzip2 ntfsprogs udpcast \
     && apt-get clean all
 
 ENV LANG zh_TW.UTF-8
