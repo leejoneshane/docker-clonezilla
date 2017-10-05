@@ -12,7 +12,7 @@ RUN apt-get --fix-missing update \
                   dmraid kpartx tofrodos dos2unix isc-dhcp-server gdisk btrfs-tools efibootmgr libxft2 libxmu6 \
                   debconf-utils discover discover-data expect iproute iputils-ping kmod libdiscover2 libdrm-intel1 \
                   libdrm-nouveau2 libdrm-radeon1 libdrm2 libelf1 libfontenc1 libfribidi0 libgl1-mesa-dri libgl1-mesa-glx \
-                  libglapi-mesa libgnutls-openssl27 libice6 libllvm3.5 libnewt0.52 libxmuu1 libxpm4 libxshmfence1 libxss1 \
+                  libglapi-mesa libgnutls-openssl27 libice6 libnewt0.52 libxmuu1 libxpm4 libxshmfence1 libxss1 \
                   libpciaccess0 libsm6 libtcl8.6 libtk8.6 libtxc-dxtn-s2tc0 libutempter0 libx11-xcb1 libxt6 libxv1 \
                   libxxf86dga1 libxxf86vm1 partimage patch tcl-expect tcl8.6 tk8.6 traceroute x11-utils xbitmaps xterm \
                   libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-shape0 libxcb-sync1 \
