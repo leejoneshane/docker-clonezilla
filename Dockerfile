@@ -15,7 +15,7 @@ RUN apt-get --fix-missing update \
                   libglapi-mesa libgnutls-openssl27 libice6 libnewt0.52 libxmuu1 libxpm4 libxshmfence1 libxss1 \
                   libpciaccess0 libsm6 libtcl8.6 libtk8.6 libtxc-dxtn-s2tc0 libutempter0 libx11-xcb1 libxt6 libxv1 \
                   libxxf86dga1 libxxf86vm1 partimage patch tcl-expect tcl8.6 tk8.6 traceroute x11-utils xbitmaps xterm \
-                  libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-shape0 libxcb-sync1 \
+                  libxaw7 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-shape0 libxcb-sync1 gnupg \
     && echo "zh_TW.UTF-8 UTF-8" > /etc/locale.gen \
     && locale-gen "zh_TW.UTF-8" \
     && dpkg-reconfigure locales \
