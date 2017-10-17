@@ -22,9 +22,8 @@ RUN apt-get --fix-missing update \
     && echo "deb http://free.nchc.org.tw/debian/ jessie main" >> /etc/apt/sources.list \
     && echo "deb http://free.nchc.org.tw/drbl-core drbl stable" >> /etc/apt/sources.list \
     && wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | apt-key add - \
-    && mkdir -p /run/sendsigs.omit.d
-    
-RUN apt-get -y install drbl clonezilla partclone ipxe lzop pigz pbzip2 udpcast \
+    && mkdir -p /run/sendsigs.omit.d \
+    && apt-get -y install drbl clonezilla partclone ipxe lzop pigz pbzip2 udpcast \
     && apt-get clean all
 
 ENV LANG zh_TW.UTF-8
