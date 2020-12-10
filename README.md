@@ -2,7 +2,7 @@
 [![](https://images.microbadger.com/badges/version/leejoneshane/drbl-server.svg)](http://microbadger.com/images/leejoneshane/drbl-server "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/leejoneshane/drbl-server.svg)](http://microbadger.com/images/leejoneshane/drbl-server "Get your own image badge on microbadger.com")
 
-This docker image is contained DEbian jessie, DRBL and clonezilla server.
+This docker image is contained Debian jessie, DRBL and clonezilla server.
 
 # About DRBL
 
